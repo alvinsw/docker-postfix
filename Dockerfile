@@ -9,6 +9,8 @@ COPY opendkim.conf TrustedHosts /etc/opendkim/
 COPY docker-entrypoint.sh /usr/local/bin/
 
 ENV POSTFIX_HOSTNAME=
+ENV POSTFIX_NET_STYLE=
+ENV POSTFIX_NET=
 ENV OPENDKIM_SELECTOR=default
 
 #STOPSIGNAL SIGKILL
